@@ -37,7 +37,26 @@
             // P01.Name = "Ahmed"
             // P02.Name = "Ahmed"
             #endregion
+            #region Question02
+            //Public  ->The member or type is accessible from anywhere, both within the same assembly and from other assemblies
+            //public class Student
+            //Example:{
+            //public void Print()
+            //        {
+            //           Console.WriteLine("Hello");
+            //        }
+            //    }
+            //Student s = new Student();
+            //s.Print(); -> Accessible
+            //Private ->The member is accessible only within the class or struct in which it is defined. It cannot be accessed from outside the class
+            //Example : class Student
+            //    {
+            //private int age;
+            // }
+            //Student s = new Student();
+            // s.Age; ->Not Accessible
             #endregion
+            #endregion
+        }
     }
-}
 }
