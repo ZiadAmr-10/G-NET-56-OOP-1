@@ -64,6 +64,13 @@
             //5.Import the namespace using the using keyword.
             //6.Create objects and use the classes from the Class Library.
             #endregion
+            #region Question04
+            //Class Library is a separate project that contains reusable classes,
+            //but has no Main method and cannot run on its own.
+            //It compiles into a DLL file.
+            // Use Class Libraries For:
+            //Reusability , Organization , Teamwork ,Maintenance
+            #endregion
             #endregion
         }
     }
