@@ -56,6 +56,14 @@
             //Student s = new Student();
             // s.Age; ->Not Accessible
             #endregion
+            #region Question03
+            //1.Create a new Class Library project in Visual Studio.
+            //2.Write the reusable classes inside the Class Library.
+            //3.Build the project.
+            //4.In the main project, add a Project Reference to the Class Library from Dependencies.
+            //5.Import the namespace using the using keyword.
+            //6.Create objects and use the classes from the Class Library.
+            #endregion
             #endregion
         }
     }
