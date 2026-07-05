@@ -1,4 +1,6 @@
-﻿namespace Assignment01OOP
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Assignment01OOP
 {
     internal class Program
     {
@@ -71,6 +73,29 @@
             // Use Class Libraries For:
             //Reusability , Organization , Teamwork ,Maintenance
             #endregion
+            #endregion
+            #region Part02
+            Console.WriteLine("Enter Movie Name: ");
+            string Movie_Name=Console.ReadLine();
+            Console.WriteLine("Enter a Type (0 = Standard,1=Vip,2=IMax)");
+            TicketType type = (TicketType)int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a Seat Row : ");
+            char Row=char.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a Seat Number : ");
+            int num=int.Parse(Console.ReadLine());
+            SeatLocation seat = new SeatLocation(Row,num);
+            Console.WriteLine("Enter a Price : ");
+            double Price=double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a Discount : ");
+            double discount=double.Parse(Console.ReadLine());
+            Ticket ticket=new Ticket(Movie_Name,type,seat,Price);
+            double tax = 14 ;
+            double BeforeDiscount = discount;
+            ticket.PrintTicket(tax);
+            ticket.ApplyDiscount(ref discount);
+            ticket.PrintTicketAfterDiscount(tax, BeforeDiscount, discount);
+
+
             #endregion
         }
     }
